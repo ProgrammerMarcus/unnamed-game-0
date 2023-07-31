@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/index.css">
+        <script src="javascript/index.js" defer></script>
+        <title>Unnamed Game 0</title>
+		<meta http-equiv="Content-Security-Policy"
+			content="default-src 'self'; script-src 'self'; img-src 'self'; style-src 'self';base-uri 'self';form-action 'self'; require-trusted-types-for 'script'; object-src 'none';" />
+
+		
+    </head>
+    <body>
+        <div id="gameContainer" class="full_background">
+            <div id="gameInterface" class="full_background hidableInterface no_display">
+                <p id="gameScore" class="center_center">0</p>
+                <div id="hpBar">
+
+                </div>
+            </div>
+        </div>
+
+        <div id="gameMenu" class="flex_column hidable overlaybackground">
+            <div class="top_element width_100 flex_row center_center">
+                <img class="title" alt="title of game" src="image/title.png">
+            </div>
+            <div class="flex_column center_center center_element">
+                <div class="flex_row option_row center_center">
+                    <div class="player_view_container flex_column center_center">
+                        <img class="player_image" id="playerView" src="image/player/player1.png">
+                    </div>
+                    <div class="option_container flex_square">
+                        <img class="gamePlayerSelector option_container_image" alt="player skin 1" data-number=1 src="image/player/player1.png">
+                        <img class="gamePlayerSelector option_container_image" alt="player skin 2" data-number=2 src="image/player/player2.png">
+                        <img class="gamePlayerSelector option_container_image" alt="player skin 3" data-number=3 src="image/player/player3.png">
+                        <img class="gamePlayerSelector option_container_image" alt="player skin 4" data-number=4 src="image/player/player4.png">
+                        <img class="gamePlayerSelector option_container_image" alt="player skin 5" data-number=5 src="image/player/player5.png">
+                    </div>
+                </div>
+                <button id="gameButtonStart" class="main_button pulse">start!</button>
+            </div>
+            <div class="buttom_element">
+                <div class="center_center">
+                    <p class="center_center game_highscore game_highscore_title">Highscore: <span class="center_center game_highscore" id="highScore">0</span></p>
+                </div>
+                <div class="flex_row row_container center_center">
+                    <div class="row_space">
+                        <img class="gameMapSelector row_image" alt="map 0" data-number=0 src="image/map/map0icon.png">
+                    </div>
+                    <div class="row_space">
+                        <img class="gameMapSelector row_image" alt="map 1" data-number=1 src="image/map/map1icon.png">
+                    </div>
+                    <div class="row_space">
+                        <img class="gameMapSelector row_image" alt="map 2" data-number=2 src="image/map/map2icon.png">
+                    </div>
+                    <div class="row_space">
+                        <img class="gameMapSelector row_image" alt="map 3" data-number=3 src="image/map/map3icon.png">
+                    </div>
+                    <div class="row_space">
+                        <img class="gameMapSelector row_image" alt="map 4" data-number=4 src="image/map/map4icon.png">
+                    </div>
+                    <div class="row_space">
+                        <img class="gameMapSelector row_image" alt="map 5" data-number=5 src="image/map/map5icon.png">
+                    </div>
+                    <div class="row_space">
+                        <img class="gameMapSelector row_image" alt="map 6" data-number=6 src="image/map/map6icon.png">
+                   </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="gameOver" class="flex_column center_center partial_background no_display">
+            <p id="messageGameOver" class="center_center primary_message width_100 font_size_2em">Game Over!</p>
+            <p id="messageHighScore" class="center_center primary_message width_100 fancy_text font_weight_bold font_size_1_5em">
+                New High Score:
+                <span class="center_center primary_message messagePoints">999</span>        
+            </p>
+            <p id="messageScore" class="center_center primary_message width_100 font_weight_bold font_size_1_5em">
+                Score:
+                <span class="center_center primary_message messagePoints">999</span>
+            </p>
+            <p id="messageGameOverContinue" class="center_center primary_message width_100 pulse extra_top_padding">TAP TO CONTINUE!</p>
+        </div>
+    </body>
+</html>
